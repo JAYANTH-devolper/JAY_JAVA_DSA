@@ -18,3 +18,25 @@ Nested loops
 O(n × m)
 
 ---
+---
+
+## 📘 Day 1 – Hollow Rectangle (5x5)
+
+### 🔹 Concept
+Nested loops with conditional statements
+
+### 🔹 Logic
+- Print `*` when:
+  - First row (`i == 1`)
+  - Last row (`i == n`)
+  - First column (`j == 1`)
+  - Last column (`j == m`)
+- Otherwise print space
+
+### 🔹 Time Complexity
+O(n × m)
+
+### 🔹 What I Learned
+- How to apply conditions inside nested loops
+- Difference between solid and hollow patterns
+- Importance of boundary checking
