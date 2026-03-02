@@ -103,3 +103,114 @@ A collection of my ongoing Data Structures and Algorithms practice, focused on b
 - Logical thinking beyond star patterns
 
 ---
+---
+
+### 🔹 6. Half Pyramid
+
+**Concept:** Nested loops (increasing pattern)
+
+**Approach:**
+- Outer loop controls rows
+- Inner loop prints stars equal to row number
+- Star count increases every row
+
+**Time Complexity:** O(n²)
+
+**What I Learned:**
+- Basic increasing pattern logic
+- Relationship between row number and star count
+
+
+---
+
+### 🔹 7. Half Pyramid (180° Rotated)
+
+**Concept:** Nested loops + space alignment
+
+**Approach:**
+- Print spaces (`n - i`) first
+- Then print stars (`i`)
+- Creates right-aligned triangle
+
+**Time Complexity:** O(n²)
+
+**What I Learned:**
+- Combining spaces and stars
+- Understanding right alignment logic
+
+
+---
+
+### 🔹 8. Binary Pattern
+
+**Concept:** Nested loops with alternating values
+
+**Approach:**
+- Use condition like `(i + j) % 2`
+- Print `1` if even
+- Print `0` if odd
+
+**Time Complexity:** O(n²)
+
+**What I Learned:**
+- Applying mathematical conditions inside loops
+- Pattern generation using parity logic
+
+
+---
+
+### 🔹 9. Butterfly Pattern
+
+**Concept:** Complex nested loops (combination pattern)
+
+**Approach:**
+- Print stars increasing on left
+- Print spaces in middle
+- Mirror stars on right
+- Reverse logic for bottom half
+
+**Time Complexity:** O(n²)
+
+**What I Learned:**
+- Dividing pattern into top and bottom halves
+- Combining multiple loop segments
+- Logical breakdown of complex patterns
+
+
+---
+
+### 🔹 10. Solid Rhombus
+
+**Concept:** Nested loops + shifting alignment
+
+**Approach:**
+- Print leading spaces (`n - i`)
+- Print fixed number of stars (`n`)
+- Shift pattern right every row
+
+**Time Complexity:** O(n²)
+
+**What I Learned:**
+- Pattern shifting logic
+- Controlling horizontal movement using spaces
+
+
+---
+
+### 🔹 11. Pattern Numericals
+
+**Concept:** Nested loops with number progression
+
+**Approach:**
+- Print numbers instead of stars
+- Control increment inside inner loop
+- Reset or update counter per row
+
+**Time Complexity:** O(n²)
+
+**What I Learned:**
+- Managing numeric sequences
+- Combining loops with variable updates
+- Stronger logical thinking beyond star patterns
+
+---
