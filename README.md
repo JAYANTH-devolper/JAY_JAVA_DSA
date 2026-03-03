@@ -1,216 +1,83 @@
+
+
 # 🚀 JAY_JAVA_DSA
 
-A collection of my ongoing Data Structures and Algorithms practice, focused on building strong fundamentals and writing optimized solutions.
+A structured documentation of my Data Structures and Algorithms journey using Java.
+This repository focuses on building strong logical thinking, mastering nested loops, and developing problem-solving skills step by step before moving into core DSA topics.
 
 ---
 
----
+## 📅 Phase 1 – Pattern Building (Logic Foundation)
 
-## 📅 Day 1 – Patterns
+In this phase, I focused on strengthening my understanding of nested loops, mathematical expressions inside loops, conditional logic, and symmetry handling.
 
-### 🔹 1. Solid Rectangle (4x5)
+### ✅ Patterns Completed
 
-**Concept:** Nested loops  
-
-**Approach:**
-- Outer loop controls rows
-- Inner loop controls columns
-- Prints `n × m` stars in every row
-
-**Time Complexity:** O(n × m)
-
-**What I Learned:**
-- Basic nested loop structure
-- Understanding row and column execution
-- How loop nesting affects output shape
-
-
----
-
-### 🔹 2. Hollow Rectangle (5x5)
-
-**Concept:** Nested loops + boundary conditions  
-
-**Approach:**
-- Print `*` when:
-  - `i == 1` (first row)
-  - `i == n` (last row)
-  - `j == 1` (first column)
-  - `j == m` (last column)
-- Otherwise print space
-
-**Time Complexity:** O(n × m)
-
-**What I Learned:**
-- Applying conditions inside nested loops
-- Writing boundary-based logic
-- Avoiding hardcoded values by using `n` and `m`
-
+* Solid Rectangle
+* Hollow Rectangle
+* Half Pyramid
+* 180° Rotated Half Pyramid
+* Full Pyramid
+* Inverse Pyramid
+* Odd Pyramid
+* Numerical Pyramid
+* Palindromic Pattern
+* Binary Pattern
+* Butterfly Pattern
+* Solid Rhombus
+* Advanced Number Patterns
 
 ---
 
-### 🔹 3. Pyramid Pattern
+## 🧠 Concepts Practiced
 
-**Concept:** Nested loops + space management  
-
-**Approach:**
-- First print spaces (`n - i`)
-- Then print stars (`2*i - 1`)
-- Repeat for each row
-
-**Time Complexity:** O(n²)
-
-**What I Learned:**
-- Managing spaces and alignment
-- Using mathematical formulas inside loops
-- Building symmetrical patterns
-
+* Nested loop execution flow
+* Boundary-based condition logic
+* Space and alignment management
+* Mathematical expressions like `2*i - 1`
+* Symmetry and mirror logic
+* Reverse iteration
+* Number progression inside loops
+* Breaking complex patterns into smaller logical parts
 
 ---
 
-### 🔹 4. Inverse Pyramid
+## 📊 Time Complexity Insight
 
-**Concept:** Reverse loop logic  
+Most patterns in this phase have a time complexity of:
 
-**Approach:**
-- Print increasing spaces
-- Print decreasing stars
-- Reverse of normal pyramid logic
+O(n²)
 
-**Time Complexity:** O(n²)
+Reason:
 
-**What I Learned:**
-- Understanding reverse iteration
-- How modifying loop conditions changes pattern structure
+* The outer loop runs `n` times
+* The inner loop runs up to `n` times
+* Total operations ≈ n × n
 
+This phase helped me understand how nested loops directly impact performance.
 
 ---
 
-### 🔹 5. Numerical Pyramid
+## 🎯 What I Improved
 
-**Concept:** Nested loops with number progression  
-
-**Approach:**
-- Print spaces for alignment
-- Print increasing numbers in each row
-- Maintain number pattern logic inside loop
-
-**Time Complexity:** O(n²)
-
-**What I Learned:**
-- Combining loops with number patterns
-- Controlling variable increments inside nested loops
-- Logical thinking beyond star patterns
-
----
----
-
-### 🔹 6. Half Pyramid
-
-**Concept:** Nested loops (increasing pattern)
-
-**Approach:**
-- Outer loop controls rows
-- Inner loop prints stars equal to row number
-- Star count increases every row
-
-**Time Complexity:** O(n²)
-
-**What I Learned:**
-- Basic increasing pattern logic
-- Relationship between row number and star count
-
+* Stronger logical thinking
+* Better dry-run ability
+* Confidence in writing nested loops without reference
+* Improved condition handling inside loops
+* Clear understanding of pattern symmetry
 
 ---
 
-### 🔹 7. Half Pyramid (180° Rotated)
+## 🚀 Next Phase
 
-**Concept:** Nested loops + space alignment
+Moving forward to core DSA topics:
 
-**Approach:**
-- Print spaces (`n - i`) first
-- Then print stars (`i`)
-- Creates right-aligned triangle
+* Arrays
+* Searching Algorithms
+* Sorting Algorithms
+* Recursion
+* Data Structures (Stack, Queue, Linked List, Trees)
 
-**Time Complexity:** O(n²)
-
-**What I Learned:**
-- Combining spaces and stars
-- Understanding right alignment logic
-
-
----
-
-### 🔹 8. Binary Pattern
-
-**Concept:** Nested loops with alternating values
-
-**Approach:**
-- Use condition like `(i + j) % 2`
-- Print `1` if even
-- Print `0` if odd
-
-**Time Complexity:** O(n²)
-
-**What I Learned:**
-- Applying mathematical conditions inside loops
-- Pattern generation using parity logic
-
-
----
-
-### 🔹 9. Butterfly Pattern
-
-**Concept:** Complex nested loops (combination pattern)
-
-**Approach:**
-- Print stars increasing on left
-- Print spaces in middle
-- Mirror stars on right
-- Reverse logic for bottom half
-
-**Time Complexity:** O(n²)
-
-**What I Learned:**
-- Dividing pattern into top and bottom halves
-- Combining multiple loop segments
-- Logical breakdown of complex patterns
-
-
----
-
-### 🔹 10. Solid Rhombus
-
-**Concept:** Nested loops + shifting alignment
-
-**Approach:**
-- Print leading spaces (`n - i`)
-- Print fixed number of stars (`n`)
-- Shift pattern right every row
-
-**Time Complexity:** O(n²)
-
-**What I Learned:**
-- Pattern shifting logic
-- Controlling horizontal movement using spaces
-
-
----
-
-### 🔹 11. Pattern Numericals
-
-**Concept:** Nested loops with number progression
-
-**Approach:**
-- Print numbers instead of stars
-- Control increment inside inner loop
-- Reset or update counter per row
-
-**Time Complexity:** O(n²)
-
-**What I Learned:**
-- Managing numeric sequences
-- Combining loops with variable updates
-- Stronger logical thinking beyond star patterns
+This repository will continue to evolve as I progress deeper into DSA.
 
 ---
