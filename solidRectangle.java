@@ -1,4 +1,8 @@
-
+/*git Solid rectangle pattern 
+*****
+*****
+*****
+***** */
 public class solidRectangle {
 
     public static void main(String[] args) {

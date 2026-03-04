@@ -1,3 +1,12 @@
+/*printing pattern binary half pyramid 
+0
+01
+010
+0101
+01010 */
+
+
+
 public class binarypattern {
     public static void main(String[] args) {
         int n=5;
