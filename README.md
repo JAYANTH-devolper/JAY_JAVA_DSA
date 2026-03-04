@@ -81,3 +81,12 @@ Moving forward to core DSA topics:
 This repository will continue to evolve as I progress deeper into DSA.
 
 ---
+## 📅 Day 4 – Arrays & Linear Search
+
+On Day 4, I practiced working with array data structures and implemented the Linear Search algorithm in two different scenarios.
+
+First, I implemented Linear Search on a One-Dimensional Array. In this approach, the algorithm traverses the array element by element and compares each value with the target element. If the target is found, the index of the element is returned; otherwise, the algorithm indicates that the element is not present in the array. This helped reinforce the concept of array traversal and basic searching techniques.
+
+Next, I implemented Linear Search on a Two-Dimensional Array (Matrix). In this case, the algorithm iterates through rows and columns using nested loops to locate the target element inside the matrix. This exercise helped me understand how multi-dimensional arrays are accessed and how search logic adapts when dealing with more complex data structures.
+
+Through this practice, I strengthened my understanding of array traversal, differences between 1D and 2D arrays, and the practical implementation of the Linear Search algorithm. This is part of my continuous effort to build strong fundamentals in Data Structures and Algorithms using Java.
