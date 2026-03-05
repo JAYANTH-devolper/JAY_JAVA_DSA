@@ -1,3 +1,4 @@
+/*Linear Search in Array*/
 public class Array_linear {
     public static void main(String[] args) {
 
