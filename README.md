@@ -90,3 +90,45 @@ First, I implemented Linear Search on a One-Dimensional Array. In this approach,
 Next, I implemented Linear Search on a Two-Dimensional Array (Matrix). In this case, the algorithm iterates through rows and columns using nested loops to locate the target element inside the matrix. This exercise helped me understand how multi-dimensional arrays are accessed and how search logic adapts when dealing with more complex data structures.
 
 Through this practice, I strengthened my understanding of array traversal, differences between 1D and 2D arrays, and the practical implementation of the Linear Search algorithm. This is part of my continuous effort to build strong fundamentals in Data Structures and Algorithms using Java.
+
+## 📅 Day 5 – Binary Search (Java)
+
+Today I implemented the Binary Search algorithm using Java. Binary Search is an efficient searching technique used to find an element in a **sorted array**. Instead of checking every element like Linear Search, Binary Search repeatedly divides the array into halves to locate the target element.
+
+### 🔹 Steps of the Algorithm
+
+1. First, the array is sorted using `Arrays.sort()` because Binary Search works only on sorted arrays.
+2. Two variables are initialized:
+   - `l` (low index) → start of the array
+   - `h` (high index) → end of the array
+3. The middle index is calculated using:
+
+   `mid = (l + h) / 2`
+
+4. The middle element is compared with the search key:
+   - If `arr[mid] == searchKey`, the element is found and the index is returned.
+   - If `arr[mid] > searchKey`, the search continues in the **left half** of the array.
+   - If `arr[mid] < searchKey`, the search continues in the **right half** of the array.
+5. This process continues until the element is found or the search space becomes empty.
+
+If the element is not present in the array, the function returns **-1**.
+
+### 🔹 Concepts Practiced
+
+- Binary Search algorithm
+- Searching in sorted arrays
+- Using `Arrays.sort()` in Java
+- Array indexing and loops
+- Algorithm efficiency
+
+### 🔹 Time Complexity
+
+Best Case: **O(1)**  
+Average Case: **O(log n)**  
+Worst Case: **O(log n)**
+
+Binary Search is much faster than Linear Search for large datasets because it reduces the search space by half in each step.
+
+### 🔹 Learning Outcome
+
+By implementing Binary Search, I learned how efficient searching algorithms work and how dividing a problem into smaller parts improves performance. This practice helped strengthen my understanding of arrays, loops, and algorithmic thinking in Java.
