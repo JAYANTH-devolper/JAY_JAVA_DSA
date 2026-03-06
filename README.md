@@ -132,3 +132,53 @@ Binary Search is much faster than Linear Search for large datasets because it re
 ### 🔹 Learning Outcome
 
 By implementing Binary Search, I learned how efficient searching algorithms work and how dividing a problem into smaller parts improves performance. This practice helped strengthen my understanding of arrays, loops, and algorithmic thinking in Java.
+## 📅 Day 6 – Bubble Sort (Java)
+
+Today I implemented the **Bubble Sort algorithm** using Java. Bubble Sort is one of the simplest sorting algorithms used to arrange elements in ascending or descending order. The algorithm works by repeatedly comparing **adjacent elements** in the array and swapping them if they are in the wrong order.
+
+The idea behind Bubble Sort is that after every iteration, the **largest element “bubbles” to the end of the array**. This process continues until the entire array becomes sorted.
+
+### 🔹 Steps of the Algorithm
+
+1. Start from the first element of the array.
+2. Compare the current element with the next element.
+3. If the current element is greater than the next element, swap them.
+4. Continue comparing and swapping adjacent elements throughout the array.
+5. After one complete pass, the largest element moves to the end of the array.
+6. Repeat the same process for the remaining unsorted part of the array.
+7. Continue this process until all elements are sorted.
+
+### 🔹 Example
+
+Initial Array:
+
+```
+9 8 7 4 5 1
+```
+
+After multiple passes, the largest elements gradually move to the end of the array until the final sorted array becomes:
+
+```
+1 4 5 7 8 9
+```
+
+### 🔹 Concepts Practiced
+
+* Sorting algorithms
+* Nested loop execution
+* Element swapping technique
+* Array traversal
+* Algorithm step-by-step comparison
+
+### 🔹 Time Complexity
+
+Best Case: **O(n)** (when the array is already sorted, using optimized bubble sort)
+Average Case: **O(n²)**
+Worst Case: **O(n²)**
+
+The algorithm performs repeated comparisons between elements, which makes it inefficient for large datasets compared to advanced sorting algorithms like **Merge Sort** or **Quick Sort**.
+
+### 🔹 Learning Outcome
+
+By implementing Bubble Sort, I understood how sorting algorithms work internally by comparing and swapping elements step by step. This exercise improved my understanding of nested loops, array indexing, and algorithm execution flow. It also helped me understand how repeated iterations gradually organize an unsorted dataset into a sorted structure.
+
