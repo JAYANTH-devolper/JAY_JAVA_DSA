@@ -1,3 +1,4 @@
+/* Binary Search in a Sorted Array */
 import java.util.*;
 public class Array_binarySrch {
     public static int binarysearch(int arr[],int sechkey){
