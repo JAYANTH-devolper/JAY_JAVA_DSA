@@ -182,3 +182,90 @@ The algorithm performs repeated comparisons between elements, which makes it ine
 
 By implementing Bubble Sort, I understood how sorting algorithms work internally by comparing and swapping elements step by step. This exercise improved my understanding of nested loops, array indexing, and algorithm execution flow. It also helped me understand how repeated iterations gradually organize an unsorted dataset into a sorted structure.
 
+
+## 📅 Day 9 – Selection Sort & Insertion Sort (Java)
+
+On Day 9, I implemented two important sorting algorithms: Selection Sort and Insertion Sort. These algorithms helped me understand different approaches to organizing elements in an array and strengthened my understanding of comparison-based sorting techniques.
+
+---
+
+### 🔹 Selection Sort
+
+Selection Sort works by repeatedly finding the minimum element from the unsorted portion of the array and placing it at the correct position in the sorted portion.
+
+Steps of the Algorithm:
+
+1. Start from the first index of the array.
+2. Assume the current element is the minimum.
+3. Compare it with the remaining elements in the unsorted portion.
+4. Find the smallest element in that portion.
+5. Swap it with the current position.
+6. Move to the next index and repeat the process until the array is sorted.
+
+Example
+
+Initial Array
+
+9 4 7 2 5
+
+Sorted Array
+
+2 4 5 7 9
+
+Time Complexity
+
+Best Case: O(n²)  
+Average Case: O(n²)  
+Worst Case: O(n²)
+
+Selection Sort performs the same number of comparisons regardless of the input order.
+
+---
+
+### 🔹 Insertion Sort
+
+Insertion Sort builds the sorted array one element at a time by inserting each element into its correct position within the already sorted portion of the array.
+
+Steps of the Algorithm:
+
+1. Assume the first element is already sorted.
+2. Pick the next element from the array.
+3. Compare it with elements in the sorted portion.
+4. Shift elements that are greater than the current element to the right.
+5. Insert the element at the correct position.
+6. Continue this process until all elements are sorted.
+
+Example
+
+Initial Array
+
+8 3 6 2 5
+
+Sorted Array
+
+2 3 5 6 8
+
+Time Complexity
+
+Best Case: O(n) (when the array is already sorted)  
+Average Case: O(n²)  
+Worst Case: O(n²)
+
+Insertion Sort works efficiently for small datasets and nearly sorted arrays.
+
+---
+
+### 🔹 Concepts Practiced
+
+- Sorting algorithms and comparison techniques  
+- Array traversal and element swapping  
+- Element shifting inside arrays  
+- Understanding sorted and unsorted portions of an array  
+- Algorithm efficiency and complexity analysis  
+
+---
+
+### 🔹 Learning Outcome
+
+By implementing Selection Sort and Insertion Sort, I improved my understanding of how sorting algorithms work internally. This exercise strengthened my knowledge of array manipulation, loop control, and algorithmic thinking in Java.
+
