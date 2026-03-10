@@ -269,3 +269,65 @@ Insertion Sort works efficiently for small datasets and nearly sorted arrays.
 
 By implementing Selection Sort and Insertion Sort, I improved my understanding of how sorting algorithms work internally. This exercise strengthened my knowledge of array manipulation, loop control, and algorithmic thinking in Java.
 
+## 📅 Day 10 – Merge Sort
+
+Today I learned and implemented **Merge Sort**, an efficient sorting algorithm based on the **Divide and Conquer** technique.
+
+### Concept
+Merge Sort divides the array into smaller subarrays until each subarray contains only one element. Then it merges those subarrays in a sorted order to produce the final sorted array.
+
+The algorithm follows three main steps:
+
+1. Divide – Split the array into two halves.
+2. Conquer – Recursively sort both halves.
+3. Merge – Combine the sorted halves into one sorted array.
+
+### Example
+
+Initial Array
+[8, 3, 5, 4, 7, 6, 1, 2]
+
+Step 1 – Divide
+[8,3,5,4]   [7,6,1,2]
+
+Step 2 – Divide again
+[8,3] [5,4]   [7,6] [1,2]
+
+Step 3 – Divide until single elements
+[8] [3] [5] [4] [7] [6] [1] [2]
+
+Step 4 – Merge and sort
+[3,8] [4,5] [6,7] [1,2]
+
+Step 5 – Merge again
+[3,4,5,8] [1,2,6,7]
+
+Final Sorted Array
+[1,2,3,4,5,6,7,8]
+
+### Time Complexity
+
+Best Case: O(n log n)  
+Average Case: O(n log n)  
+Worst Case: O(n log n)
+
+### Space Complexity
+
+O(n)
+
+Merge Sort requires extra memory to store temporary arrays while merging.
+
+### Advantages
+- Efficient for large datasets
+- Guaranteed O(n log n) performance
+- Stable sorting algorithm
+- Works well for linked lists and external sorting
+
+### Disadvantages
+- Requires extra memory
+- Slightly slower for very small datasets
+
+### Key Learning
+
+Merge Sort demonstrates the **Divide and Conquer approach**, where a large problem is broken into smaller parts, solved individually, and then combined to get the final solution.
+
