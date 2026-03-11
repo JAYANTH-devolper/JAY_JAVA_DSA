@@ -331,3 +331,30 @@ Merge Sort requires extra memory to store temporary arrays while merging.
 
 Merge Sort demonstrates the **Divide and Conquer approach**, where a large problem is broken into smaller parts, solved individually, and then combined to get the final solution.
 
+## Day 11 – Quick Sort
+
+Today I practiced the Quick Sort algorithm, which is a highly efficient sorting algorithm based on the Divide and Conquer technique. It works by selecting a pivot element from the array and partitioning the remaining elements into two groups: elements smaller than the pivot and elements greater than the pivot. After partitioning, the pivot element reaches its correct sorted position.
+
+The same process is then recursively applied to the left and right subarrays until the entire array becomes sorted.
+
+Steps involved in Quick Sort:
+1. Choose a pivot element from the array.
+2. Rearrange the array so that all elements smaller than the pivot come before it and all elements greater than the pivot come after it.
+3. The pivot is placed in its correct sorted position.
+4. Recursively apply the same process to the left and right subarrays.
+
+Time Complexity:
+Best Case: O(n log n)  
+Average Case: O(n log n)  
+Worst Case: O(n²) (occurs when pivot selection is poor)
+
+Space Complexity:
+O(log n) due to recursive stack calls.
+
+Key Points:
+- Quick Sort is efficient for large datasets.
+- It is an in-place sorting algorithm (does not require extra array space).
+- Performance depends on proper pivot selection.
+
+Today’s learning helped me understand partitioning logic, recursion in sorting algorithms, and how divide and conquer improves sorting efficiency.
+
