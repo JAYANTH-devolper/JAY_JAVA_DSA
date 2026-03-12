@@ -357,4 +357,56 @@ Key Points:
 - Performance depends on proper pivot selection.
 
 Today’s learning helped me understand partitioning logic, recursion in sorting algorithms, and how divide and conquer improves sorting efficiency.
+## 📅 Day 12 – Factorial using Recursion (Java)
+
+Today I practiced solving the **Factorial problem using Recursion** in Java.  
+Factorial is a common example used to understand how recursion works.
+
+### 🔹 What is Factorial?
+
+The factorial of a number **n** (written as n!) is the product of all positive integers from **1 to n**.
+
+Example:
+5! = 5 × 4 × 3 × 2 × 1 = 120
+
+### 🔹 Recursive Logic
+
+Recursion works by breaking a problem into smaller subproblems.
+
+Factorial follows this rule:
+
+n! = n × (n-1)!
+
+The recursion stops when it reaches the **base case**.
+
+Base Case:
+0! = 1  
+1! = 1
+
+### 🔹 Java Implementation
+
+```java
+public class Factorial {
+
+    static int factorial(int n) {
+        if (n == 0 || n == 1) {
+            return 1;
+        }
+        return n * factorial(n - 1);
+    }
+
+    public static void main(String[] args) {
+        int num = 5;
+        System.out.println("Factorial of " + num + " is " + factorial(num));
+    }
+}
+```
+
+### 🔹 Time Complexity
+O(n)
+
+### 🔹 Key Learning
+- Understanding recursion and base cases
+- Breaking problems into smaller subproblems
+- How recursive function calls work in the call stack
 
