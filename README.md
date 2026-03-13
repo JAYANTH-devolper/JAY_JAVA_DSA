@@ -410,3 +410,28 @@ O(n)
 - Breaking problems into smaller subproblems
 - How recursive function calls work in the call stack
 
+# Day 13 - Fibonacci Series (DSA Practice)
+
+Today I practiced the Fibonacci Series as part of my daily Data Structures and Algorithms learning challenge.
+
+The Fibonacci series is a sequence of numbers where each number is the sum of the two previous numbers. The series usually starts with 0 and 1.
+
+Example of Fibonacci sequence:
+0, 1, 1, 2, 3, 5, 8, 13, 21, ...
+
+In this program, the Fibonacci numbers are generated using Java. The logic works by starting with the first two numbers (0 and 1) and then repeatedly adding the previous two numbers to generate the next number in the sequence.
+
+Algorithm Steps:
+1. Start with two variables representing the first two Fibonacci numbers.
+2. Print the first two numbers.
+3. Use a loop to calculate the next number by adding the previous two numbers.
+4. Update the variables after each iteration.
+5. Continue the process until the required number of terms is printed.
+
+This exercise helped me understand:
+- Loop logic
+- Variable updating
+- Basic sequence generation
+- Problem solving using iterative approach
+
+Practicing Fibonacci is useful because it strengthens understanding of iteration, recursion, and algorithmic thinking, which are important concepts in Data Structures and Algorithms.
