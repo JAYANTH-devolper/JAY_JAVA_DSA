@@ -435,3 +435,36 @@ This exercise helped me understand:
 - Problem solving using iterative approach
 
 Practicing Fibonacci is useful because it strengthens understanding of iteration, recursion, and algorithmic thinking, which are important concepts in Data Structures and Algorithms.
+
+## 📅 Day 14 – Tower of Hanoi (Recursion)
+
+Today I practiced the Tower of Hanoi problem, which is a classic example used to understand recursion in Data Structures and Algorithms.
+
+### 🔹 Problem Description
+
+The Tower of Hanoi puzzle consists of three rods and n disks of different sizes stacked on one rod in decreasing order (largest disk at the bottom and smallest at the top).
+
+The goal is to move all the disks from the Source rod to the Destination rod using a Helper rod while following these rules:
+
+1. Only one disk can be moved at a time.
+2. A larger disk cannot be placed on top of a smaller disk.
+3. Only the top disk of a rod can be moved.
+
+### 🔹 Recursive Logic
+
+The problem can be solved using recursion by breaking it into smaller steps.
+
+Steps of the Algorithm:
+
+1. Move n-1 disks from the Source rod to the Helper rod.
+2. Move the largest disk from the Source rod to the Destination rod.
+3. Move the n-1 disks from the Helper rod to the Destination rod.
+
+This recursive process continues until the base case is reached.
+
+### 🔹 Base Case
+
+If there is only one disk, move it directly from the Source rod to the Destination rod.
+
+### 🔹 Java Implementation
+
