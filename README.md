@@ -468,3 +468,54 @@ If there is only one disk, move it directly from the Source rod to the Destinati
 
 ### 🔹 Java Implementation
 
+## 📅 Day 15 – Reverse a Number
+
+Today I practiced solving the **Reverse Number problem** in Java. This problem helps build a strong understanding of **digit manipulation, arithmetic operations, and loop-based logic**, which are important fundamentals in algorithmic problem solving.
+
+### 🔹 Problem Description
+
+The task is to reverse the digits of a given integer number.
+
+Example:
+
+Original Number
+12345
+
+Reversed Number
+54321
+
+The algorithm works by repeatedly extracting the **last digit of the number** and constructing a new number in reverse order.
+
+### 🔹 Algorithm Steps
+
+1. Start with the given integer number.
+2. Initialize a variable to store the reversed number.
+3. Extract the last digit of the number using the modulus operator `%`.
+4. Add this digit to the reversed number by shifting the existing digits to the left.
+5. Remove the last digit from the original number using integer division `/`.
+6. Repeat the process until the number becomes zero.
+7. The final value obtained is the reversed number.
+
+### 🔹 Concepts Practiced
+
+* Digit extraction using modulus operator
+* Integer division to remove digits
+* Loop-based number processing
+* Mathematical manipulation of integers
+* Logical step-by-step problem solving
+
+### 🔹 Time Complexity
+
+O(n)
+
+Where **n represents the number of digits in the given number**, since each digit is processed once.
+
+### 🔹 Space Complexity
+
+O(1)
+
+The algorithm uses only a few variables and does not require additional memory proportional to the input size.
+
+### 🔹 Learning Outcome
+
+By implementing the Reverse Number problem, I improved my understanding of how numbers can be manipulated using arithmetic operations. This exercise strengthened my ability to work with loops, handle digit extraction, and construct new values step by step while solving algorithmic problems.
