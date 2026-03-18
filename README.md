@@ -519,3 +519,53 @@ The algorithm uses only a few variables and does not require additional memory p
 ### 🔹 Learning Outcome
 
 By implementing the Reverse Number problem, I improved my understanding of how numbers can be manipulated using arithmetic operations. This exercise strengthened my ability to work with loops, handle digit extraction, and construct new values step by step while solving algorithmic problems.
+
+## 📅 Day 16 – Palindrome Check (Number)
+
+Today I implemented a program to check whether a given number is a **Palindrome**. This problem helps in understanding **number reversal, comparison logic, and conditional statements**, which are important in basic algorithm design.
+
+### 🔹 Problem Description
+
+A number is called a **Palindrome** if it reads the same forward and backward.
+
+Example:
+
+121 → Palindrome
+123 → Not a Palindrome
+
+The idea is to reverse the number and compare it with the original number.
+
+### 🔹 Algorithm Steps
+
+1. Take the input number and store it in a temporary variable.
+2. Initialize a variable to store the reversed number.
+3. Extract the last digit using the modulus operator `%`.
+4. Add the digit to the reversed number by shifting existing digits.
+5. Remove the last digit from the number using division `/`.
+6. Repeat the process until the number becomes zero.
+7. Compare the reversed number with the original number.
+8. If both are equal, the number is a Palindrome; otherwise, it is not.
+
+### 🔹 Concepts Practiced
+
+* Number reversal logic
+* Modulus and division operations
+* Loop execution and condition checking
+* Comparison of values
+* Problem solving using step-by-step logic
+
+### 🔹 Time Complexity
+
+O(n)
+
+Where **n is the number of digits**, since each digit is processed once.
+
+### 🔹 Space Complexity
+
+O(1)
+
+Only a few variables are used, so no extra space is required.
+
+### 🔹 Learning Outcome
+
+By solving the Palindrome problem, I strengthened my understanding of number manipulation and comparison logic. This exercise improved my ability to combine multiple concepts like loops, arithmetic operations, and condition checking to solve a complete problem.
