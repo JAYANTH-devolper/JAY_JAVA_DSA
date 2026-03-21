@@ -569,3 +569,83 @@ Only a few variables are used, so no extra space is required.
 ### 🔹 Learning Outcome
 
 By solving the Palindrome problem, I strengthened my understanding of number manipulation and comparison logic. This exercise improved my ability to combine multiple concepts like loops, arithmetic operations, and condition checking to solve a complete problem.
+
+
+## 📅 Day 17 – Print All Subsets of a String (Recursion)
+
+Today I implemented a program to generate **all subsets of a given string** using recursion. This problem is an important step toward understanding **backtracking and recursive decision making**, which are key concepts in Data Structures and Algorithms.
+
+### 🔹 Problem Description
+
+Given a string, the task is to print all possible subsets (also called subsequences) of that string.
+
+Example:
+
+Input: ABC
+
+Output:
+A
+B
+C
+AB
+AC
+BC
+ABC
+
+The empty subset can also be considered as part of the result.
+
+---
+
+### 🔹 Recursive Logic
+
+At each step, we have **two choices** for every character:
+
+1. Include the current character in the subset
+2. Exclude the current character from the subset
+
+This creates a **decision tree**, and recursion is used to explore all possible combinations.
+
+---
+
+### 🔹 Algorithm Steps
+
+1. Start from the first character of the string.
+2. For each character, make two recursive calls:
+
+   * One including the current character
+   * One excluding the current character
+3. Move to the next index after each recursive call.
+4. When the end of the string is reached, print the current subset.
+5. Repeat this process until all combinations are generated.
+
+---
+
+### 🔹 Concepts Practiced
+
+* Recursion and recursive function calls
+* Backtracking and decision trees
+* String manipulation
+* Exploring all possible combinations
+* Breaking problems into smaller subproblems
+
+---
+
+### 🔹 Time Complexity
+
+O(2ⁿ)
+
+Each character has two choices (include or exclude), leading to **2ⁿ subsets**.
+
+---
+
+### 🔹 Space Complexity
+
+O(n)
+
+Due to the recursion call stack and temporary storage of subsets.
+
+---
+
+### 🔹 Learning Outcome
+
+By solving this problem, I developed a strong understanding of how recursion can be used to explore all possible combinations. This problem also introduced me to **backtracking concepts**, which are widely used in advanced problems like permutations, combinations, and constraint-based problems.
