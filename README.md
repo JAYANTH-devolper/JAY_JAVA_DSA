@@ -649,3 +649,82 @@ Due to the recursion call stack and temporary storage of subsets.
 ### 🔹 Learning Outcome
 
 By solving this problem, I developed a strong understanding of how recursion can be used to explore all possible combinations. This problem also introduced me to **backtracking concepts**, which are widely used in advanced problems like permutations, combinations, and constraint-based problems.
+## 📅 Day 18 – Permutations of a String (Recursion)
+
+Today I implemented a program to generate **all permutations of a given string** using recursion. This problem is an important extension of recursion and introduces deeper understanding of **backtracking and swapping techniques**.
+
+### 🔹 Problem Description
+
+Given a string, the task is to print all possible **permutations** of that string.
+
+A permutation is an arrangement of all characters of the string in different possible orders.
+
+Example:
+
+Input: ABC
+
+Output:
+ABC
+ACB
+BAC
+BCA
+CAB
+CBA
+
+---
+
+### 🔹 Recursive Logic
+
+The idea is to fix one character at a time and recursively generate permutations for the remaining characters.
+
+At each step:
+
+1. Choose a character
+2. Swap it with the current position
+3. Recursively solve for the remaining string
+4. Backtrack by restoring the original order
+
+This ensures all possible arrangements are explored.
+
+---
+
+### 🔹 Algorithm Steps
+
+1. Start from the first index of the string.
+2. Iterate through the string and swap the current index with every possible index.
+3. Fix one character and recursively generate permutations for the remaining substring.
+4. Once a permutation is formed, print it.
+5. Backtrack by swapping the characters back to their original positions.
+6. Repeat the process for all positions.
+
+---
+
+### 🔹 Concepts Practiced
+
+* Recursion and backtracking
+* Swapping elements
+* Generating all possible arrangements
+* Decision making in recursive calls
+* Problem decomposition
+
+---
+
+### 🔹 Time Complexity
+
+O(n!)
+
+There are **n! (factorial)** possible permutations for a string of length n.
+
+---
+
+### 🔹 Space Complexity
+
+O(n)
+
+Due to recursion stack usage.
+
+---
+
+### 🔹 Learning Outcome
+
+By solving the permutations problem, I gained a deeper understanding of **backtracking and recursive problem solving**. This problem helped me visualize how complex combinations are generated step by step and improved my ability to handle advanced recursive algorithms.
