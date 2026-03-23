@@ -728,3 +728,85 @@ Due to recursion stack usage.
 ### 🔹 Learning Outcome
 
 By solving the permutations problem, I gained a deeper understanding of **backtracking and recursive problem solving**. This problem helped me visualize how complex combinations are generated step by step and improved my ability to handle advanced recursive algorithms.
+
+## 📅 Day 19 – N-Queens Problem (Backtracking)
+
+Today I implemented the **N-Queens problem**, which is a classic problem in Data Structures and Algorithms used to understand **backtracking and constraint-based problem solving**.
+
+### 🔹 Problem Description
+
+The N-Queens problem involves placing **N queens on an N × N chessboard** such that no two queens attack each other.
+
+Conditions:
+
+* No two queens should be in the same **row**
+* No two queens should be in the same **column**
+* No two queens should be in the same **diagonal**
+
+Example:
+
+For N = 4, one possible valid arrangement is:
+
+Q . . .
+. . Q .
+. Q . .
+. . . Q
+
+---
+
+### 🔹 Backtracking Logic
+
+The problem is solved using **backtracking**, where we try to place queens row by row.
+
+At each row:
+
+1. Try placing a queen in each column
+2. Check if the position is safe
+3. If safe, place the queen and move to the next row
+4. If not safe, try the next column
+5. If no valid position is found, backtrack to the previous row and try a different position
+
+This ensures all valid configurations are explored.
+
+---
+
+### 🔹 Algorithm Steps
+
+1. Start from the first row of the chessboard.
+2. For each column in the current row, check if placing a queen is safe.
+3. If safe, place the queen and move to the next row recursively.
+4. If placing the queen leads to a solution, print/store the configuration.
+5. If not, remove the queen (backtrack) and try the next column.
+6. Continue this process until all rows are processed.
+
+---
+
+### 🔹 Concepts Practiced
+
+* Backtracking and recursion
+* Constraint checking (row, column, diagonal)
+* Decision making and undoing choices
+* 2D array representation
+* Exploring all possible solutions
+
+---
+
+### 🔹 Time Complexity
+
+O(N!)
+
+The number of possible ways grows rapidly, as we try multiple placements for each row.
+
+---
+
+### 🔹 Space Complexity
+
+O(N)
+
+Due to recursion stack and storage for the board configuration.
+
+---
+
+### 🔹 Learning Outcome
+
+By solving the N-Queens problem, I gained a strong understanding of **backtracking and constraint satisfaction problems**. This problem improved my ability to explore multiple possibilities, make decisions, and backtrack when a solution path fails. It is an important step toward mastering advanced recursion and complex problem solving.
