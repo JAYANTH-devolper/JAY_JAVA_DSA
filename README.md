@@ -810,3 +810,77 @@ Due to recursion stack and storage for the board configuration.
 ### 🔹 Learning Outcome
 
 By solving the N-Queens problem, I gained a strong understanding of **backtracking and constraint satisfaction problems**. This problem improved my ability to explore multiple possibilities, make decisions, and backtrack when a solution path fails. It is an important step toward mastering advanced recursion and complex problem solving.
+
+## 📅 Day 20 – Sudoku Solver (Backtracking)
+
+Today I implemented the **Sudoku Solver problem** using recursion and backtracking. This problem is a classic example of **constraint-based problem solving** and helps in mastering advanced recursion techniques.
+
+### 🔹 Problem Description
+
+Sudoku is a 9 × 9 grid-based puzzle where some cells are already filled, and the goal is to fill the remaining cells such that:
+
+* Each row contains digits from **1 to 9** without repetition
+* Each column contains digits from **1 to 9** without repetition
+* Each 3 × 3 subgrid contains digits from **1 to 9** without repetition
+
+Empty cells are represented using a placeholder (such as `.`), and the task is to fill them correctly.
+
+---
+
+### 🔹 Backtracking Logic
+
+The Sudoku Solver uses **backtracking**, where we try possible numbers and revert if a choice leads to an invalid state.
+
+At each empty cell:
+
+1. Try placing digits from **1 to 9**
+2. Check if the number is valid in the current row, column, and 3 × 3 grid
+3. If valid, place the number and move to the next empty cell
+4. If the placement leads to a solution, continue
+5. If not, remove the number (backtrack) and try the next possible value
+
+This process continues until the board is completely filled.
+
+---
+
+### 🔹 Algorithm Steps
+
+1. Traverse the board to find an empty cell.
+2. For that cell, try all digits from 1 to 9.
+3. Check whether the current number is valid.
+4. If valid, place the number and recursively solve the remaining board.
+5. If the solution fails, remove the number and try the next one.
+6. Repeat the process until all cells are filled correctly.
+
+---
+
+### 🔹 Concepts Practiced
+
+* Recursion and backtracking
+* Constraint checking (row, column, subgrid)
+* 2D array manipulation
+* Decision making and undoing choices
+* Solving complex problems step by step
+
+---
+
+### 🔹 Time Complexity
+
+O(9^(n²)) (worst case)
+
+The algorithm tries multiple possibilities for each empty cell, making it computationally intensive.
+
+---
+
+### 🔹 Space Complexity
+
+O(n²)
+
+Due to recursion stack and board storage.
+
+---
+
+### 🔹 Learning Outcome
+
+By solving the Sudoku problem, I gained a deeper understanding of **backtracking and constraint satisfaction techniques**. This problem improved my ability to handle complex recursive logic, validate conditions efficiently, and explore multiple solution paths systematically. It is a significant step toward mastering advanced DSA problems.
+
