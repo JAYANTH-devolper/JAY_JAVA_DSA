@@ -884,3 +884,77 @@ Due to recursion stack and board storage.
 
 By solving the Sudoku problem, I gained a deeper understanding of **backtracking and constraint satisfaction techniques**. This problem improved my ability to handle complex recursive logic, validate conditions efficiently, and explore multiple solution paths systematically. It is a significant step toward mastering advanced DSA problems.
 
+## 📅 Day 21 – Rat in a Maze (Backtracking)
+
+Today I implemented the **Rat in a Maze problem**, which is a classic backtracking problem used to understand **path finding and recursive exploration** in Data Structures and Algorithms.
+
+### 🔹 Problem Description
+
+The problem consists of a maze represented as a matrix where:
+
+* `1` indicates a path that can be used
+* `0` indicates a blocked cell
+
+The goal is to find a path for a rat to move from the **top-left corner (0,0)** to the **bottom-right corner (n-1,n-1)**.
+
+The rat can move in allowed directions and must avoid blocked cells.
+
+---
+
+### 🔹 Backtracking Logic
+
+The problem is solved using **backtracking**, where we explore all possible paths and undo choices when a path does not lead to a solution.
+
+At each cell:
+
+1. Check if the current position is safe
+2. Mark the cell as part of the path
+3. Move in possible directions (such as right and down in the basic version)
+4. If a move leads to a solution, continue
+5. If not, backtrack by unmarking the cell and try another path
+
+This ensures that all possible valid paths are explored.
+
+---
+
+### 🔹 Algorithm Steps
+
+1. Start from the initial position (0,0).
+2. Check if the current cell is valid and not blocked.
+3. Mark the cell as part of the solution path.
+4. Recursively move to the next possible positions.
+5. If the destination is reached, print/store the solution.
+6. If a move does not lead to a solution, backtrack and try a different path.
+7. Repeat until all possible paths are explored or a solution is found.
+
+---
+
+### 🔹 Concepts Practiced
+
+* Backtracking and recursion
+* Path finding in a matrix
+* Decision making and undoing choices
+* 2D array traversal
+* Problem solving using multiple possibilities
+
+---
+
+### 🔹 Time Complexity
+
+O(2ⁿ)
+
+In the basic version, the algorithm explores multiple paths, leading to exponential complexity.
+
+---
+
+### 🔹 Space Complexity
+
+O(n²)
+
+Due to the solution matrix and recursion stack.
+
+---
+
+### 🔹 Learning Outcome
+
+By solving the Rat in a Maze problem, I improved my understanding of **backtracking and path exploration techniques**. This problem helped me learn how to explore multiple possibilities, handle constraints, and backtrack when a solution path fails. It is an important step toward solving advanced problems involving graphs and search algorithms.
