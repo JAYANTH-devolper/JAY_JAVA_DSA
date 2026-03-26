@@ -958,3 +958,84 @@ Due to the solution matrix and recursion stack.
 ### 🔹 Learning Outcome
 
 By solving the Rat in a Maze problem, I improved my understanding of **backtracking and path exploration techniques**. This problem helped me learn how to explore multiple possibilities, handle constraints, and backtrack when a solution path fails. It is an important step toward solving advanced problems involving graphs and search algorithms.
+## 📅 Day 22 – Generate Parentheses (Recursion & Backtracking)
+
+Today I implemented the **Generate Parentheses problem** using recursion and backtracking. This problem is an important example of **constraint-based recursion**, where only valid combinations are generated instead of checking all possibilities.
+
+### 🔹 Problem Description
+
+Given an integer **n**, the task is to generate all combinations of **n pairs of valid parentheses**.
+
+A valid combination means:
+
+* Every opening bracket `(` must have a corresponding closing bracket `)`
+* The parentheses must be properly balanced
+
+Example:
+
+Input: n = 3
+
+Output:
+((()))
+(()())
+(())()
+()(())
+()()()
+
+---
+
+### 🔹 Backtracking Logic
+
+The problem is solved using **backtracking**, where we build the solution step by step while maintaining valid conditions.
+
+At each step:
+
+1. We can add an opening bracket `(` if the count of open brackets is less than n
+2. We can add a closing bracket `)` only if it does not exceed the number of open brackets
+3. We continue building the string until its length becomes `2 * n`
+4. Once the string is complete and valid, we store it
+
+This ensures that only **valid combinations** are generated.
+
+---
+
+### 🔹 Algorithm Steps
+
+1. Start with an empty string.
+2. Keep track of the number of open and close brackets used.
+3. Add an opening bracket if the count is less than n.
+4. Add a closing bracket if the count of closing brackets is less than opening brackets.
+5. Repeat recursively until the length reaches `2 * n`.
+6. Store the valid combination.
+
+---
+
+### 🔹 Concepts Practiced
+
+* Recursion and backtracking
+* Constraint-based problem solving
+* String building during recursion
+* Decision making and pruning invalid states
+* Generating valid combinations
+
+---
+
+### 🔹 Time Complexity
+
+O(2ⁿ)
+
+The number of recursive calls grows exponentially with n.
+
+---
+
+### 🔹 Space Complexity
+
+O(n)
+
+Due to recursion stack and temporary string storage.
+
+---
+
+### 🔹 Learning Outcome
+
+By solving the Generate Parentheses problem, I developed a strong understanding of **constraint handling in recursion**. This problem helped me learn how to generate only valid solutions instead of checking all possibilities, which improves efficiency and problem-solving skills in advanced DSA problems.
