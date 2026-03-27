@@ -1039,3 +1039,89 @@ Due to recursion stack and temporary string storage.
 ### 🔹 Learning Outcome
 
 By solving the Generate Parentheses problem, I developed a strong understanding of **constraint handling in recursion**. This problem helped me learn how to generate only valid solutions instead of checking all possibilities, which improves efficiency and problem-solving skills in advanced DSA problems.
+
+## 📅 Day 23 – Valid Parentheses (Stack)
+
+Today I implemented the **Valid Parentheses problem** using a Stack. This problem is a fundamental example of how stacks are used to solve **balanced expression and matching problems** in Data Structures and Algorithms.
+
+### 🔹 Problem Description
+
+Given a string containing only the characters:
+
+`(`, `)`, `{`, `}`, `[`, `]`
+
+The task is to determine whether the input string is **valid**.
+
+A string is considered valid if:
+
+* Every opening bracket has a corresponding closing bracket
+* Brackets are closed in the correct order
+* Each closing bracket matches the most recent unmatched opening bracket
+
+Example:
+
+Input: `"()"` → Valid
+Input: `"({[]})"` → Valid
+Input: `"(]"` → Invalid
+Input: `"([)]"` → Invalid
+
+---
+
+### 🔹 Stack Logic
+
+The problem is solved using a **Stack**, which follows the **Last In First Out (LIFO)** principle.
+
+Steps:
+
+1. Traverse each character in the string
+2. If it is an opening bracket, push the expected closing bracket onto the stack
+3. If it is a closing bracket, check:
+
+   * If the stack is empty → invalid
+   * If the top of the stack does not match → invalid
+4. Continue until all characters are processed
+5. If the stack is empty at the end → valid string
+
+---
+
+### 🔹 Algorithm Steps
+
+1. Create an empty stack
+2. Loop through each character in the string
+3. Push expected closing brackets for every opening bracket
+4. For closing brackets, compare with the top of the stack
+5. If mismatch occurs, return false
+6. After traversal, check if the stack is empty
+7. Return true if empty, otherwise false
+
+---
+
+### 🔹 Concepts Practiced
+
+* Stack data structure
+* LIFO (Last In First Out) principle
+* String traversal
+* Matching and validation logic
+* Efficient problem solving using stacks
+
+---
+
+### 🔹 Time Complexity
+
+O(n)
+
+Each character is processed once.
+
+---
+
+### 🔹 Space Complexity
+
+O(n)
+
+In the worst case, all characters are pushed onto the stack.
+
+---
+
+### 🔹 Learning Outcome
+
+By solving the Valid Parentheses problem, I learned how stacks can be used to handle **matching and balancing problems efficiently**. This problem strengthened my understanding of stack operations and helped me move from recursive thinking to iterative problem solving using data structures.
