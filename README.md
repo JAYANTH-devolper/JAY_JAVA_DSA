@@ -1125,3 +1125,81 @@ In the worst case, all characters are pushed onto the stack.
 ### 🔹 Learning Outcome
 
 By solving the Valid Parentheses problem, I learned how stacks can be used to handle **matching and balancing problems efficiently**. This problem strengthened my understanding of stack operations and helped me move from recursive thinking to iterative problem solving using data structures.
+## 📅 Day 24 – Next Greater Element (Stack)
+
+Today I implemented the **Next Greater Element problem** using a Stack. This problem is a classic example of how stacks are used to optimize solutions and reduce time complexity from brute force to efficient approaches.
+
+### 🔹 Problem Description
+
+Given an array of integers, the task is to find the **next greater element for each element** in the array.
+
+The next greater element of an element is the first element to its right that is greater than it. If no such element exists, return `-1`.
+
+Example:
+
+Input:
+[4, 5, 2, 10]
+
+Output:
+[5, 10, 10, -1]
+
+---
+
+### 🔹 Stack Logic
+
+The problem is solved using a **Stack** to keep track of useful elements while traversing the array.
+
+Steps:
+
+1. Traverse the array from **right to left**
+2. For each element, remove all elements from the stack that are smaller than or equal to it
+3. The top of the stack will be the next greater element
+4. If the stack is empty, the result is `-1`
+5. Push the current element onto the stack
+
+This ensures that only relevant elements are kept in the stack.
+
+---
+
+### 🔹 Algorithm Steps
+
+1. Create an empty stack
+2. Initialize a result array
+3. Traverse the array from right to left
+4. While the stack is not empty and the top element is smaller than or equal to the current element, pop it
+5. If the stack is empty, store `-1`
+6. Otherwise, store the top of the stack as the next greater element
+7. Push the current element onto the stack
+8. Repeat for all elements
+
+---
+
+### 🔹 Concepts Practiced
+
+* Stack data structure
+* Monotonic stack pattern
+* Array traversal (right to left)
+* Optimization from brute force to efficient solution
+* Problem solving using data structures
+
+---
+
+### 🔹 Time Complexity
+
+O(n)
+
+Each element is pushed and popped at most once.
+
+---
+
+### 🔹 Space Complexity
+
+O(n)
+
+Stack is used to store elements.
+
+---
+
+### 🔹 Learning Outcome
+
+By solving the Next Greater Element problem, I learned how to use a **monotonic stack** to efficiently solve problems involving comparisons. This problem improved my understanding of optimizing algorithms and recognizing patterns that reduce time complexity in real-world scenarios.
