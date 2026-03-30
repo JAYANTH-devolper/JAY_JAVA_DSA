@@ -1203,3 +1203,81 @@ Stack is used to store elements.
 ### 🔹 Learning Outcome
 
 By solving the Next Greater Element problem, I learned how to use a **monotonic stack** to efficiently solve problems involving comparisons. This problem improved my understanding of optimizing algorithms and recognizing patterns that reduce time complexity in real-world scenarios.
+
+## 📅 Day 25 – Stock Span Problem (Stack)
+
+Today I implemented the **Stock Span Problem** using a Stack. This problem is a classic example of the **monotonic stack pattern**, which is widely used to solve range-based problems efficiently.
+
+### 🔹 Problem Description
+
+Given an array of stock prices where each element represents the price on a particular day, the task is to calculate the **span of stock’s price for each day**.
+
+The span is defined as the number of consecutive days (including the current day) where the stock price was **less than or equal to today’s price**.
+
+Example:
+
+Input:
+[100, 80, 60, 70, 60, 75, 85]
+
+Output:
+[1, 1, 1, 2, 1, 4, 6]
+
+---
+
+### 🔹 Stack Logic
+
+The problem is solved using a **Stack that stores indices** of elements.
+
+Steps:
+
+1. Traverse the array from left to right
+2. Remove indices from the stack while the current price is greater than or equal to the price at those indices
+3. If the stack becomes empty, the span is `i + 1`
+4. Otherwise, the span is the difference between the current index and the index at the top of the stack
+5. Push the current index onto the stack
+
+This ensures that only relevant elements are kept for span calculation.
+
+---
+
+### 🔹 Algorithm Steps
+
+1. Create an empty stack to store indices
+2. Initialize a result array to store spans
+3. Traverse the stock prices array
+4. While the stack is not empty and current price is greater than or equal to the top index price, pop from stack
+5. Calculate span based on stack condition
+6. Push current index into the stack
+7. Repeat for all elements
+
+---
+
+### 🔹 Concepts Practiced
+
+* Stack data structure
+* Monotonic stack pattern
+* Index-based calculations
+* Efficient range computation
+* Optimizing from O(n²) to O(n)
+
+---
+
+### 🔹 Time Complexity
+
+O(n)
+
+Each element is pushed and popped at most once.
+
+---
+
+### 🔹 Space Complexity
+
+O(n)
+
+Stack is used to store indices.
+
+---
+
+### 🔹 Learning Outcome
+
+By solving the Stock Span problem, I learned how to use a **monotonic stack to efficiently calculate ranges**. This problem strengthened my understanding of stack-based optimization and helped me recognize patterns that are commonly used in advanced DSA problems.
