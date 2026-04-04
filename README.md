@@ -1281,3 +1281,87 @@ Stack is used to store indices.
 ### 🔹 Learning Outcome
 
 By solving the Stock Span problem, I learned how to use a **monotonic stack to efficiently calculate ranges**. This problem strengthened my understanding of stack-based optimization and helped me recognize patterns that are commonly used in advanced DSA problems.
+
+## 📅 Day 26 – Maximum Sum Subarray of Size K (Sliding Window)
+
+Today I implemented the **Maximum Sum Subarray of Size K** using the Sliding Window technique. This problem is a fundamental example of how to optimize problems that involve **subarrays and continuous ranges**.
+
+### 🔹 Problem Description
+
+Given an array of integers and a number `k`, the task is to find the **maximum sum of any contiguous subarray of size k**.
+
+Example:
+
+Input:
+Array: [2, 1, 5, 1, 3, 2]
+k = 3
+
+Output:
+9
+
+Explanation:
+Subarrays of size 3:
+[2, 1, 5] → sum = 8
+[1, 5, 1] → sum = 7
+[5, 1, 3] → sum = 9
+[1, 3, 2] → sum = 6
+
+Maximum = 9
+
+---
+
+### 🔹 Sliding Window Logic
+
+Instead of calculating the sum of every subarray using nested loops, we use a **sliding window** to optimize the solution.
+
+Steps:
+
+1. Calculate the sum of the first window of size `k`
+2. Slide the window one step at a time
+3. Add the next element and remove the first element of the previous window
+4. Update the maximum sum during each step
+
+This avoids recalculating the sum from scratch.
+
+---
+
+### 🔹 Algorithm Steps
+
+1. Initialize the sum of the first `k` elements
+2. Store it as the current maximum
+3. Traverse the array from index `k` to end
+4. Add current element and subtract the element leaving the window
+5. Update the maximum sum
+6. Continue until the end of the array
+
+---
+
+### 🔹 Concepts Practiced
+
+* Sliding window technique
+* Subarray processing
+* Optimization of nested loops
+* Efficient range updates
+* Array traversal
+
+---
+
+### 🔹 Time Complexity
+
+O(n)
+
+Each element is processed once.
+
+---
+
+### 🔹 Space Complexity
+
+O(1)
+
+No extra space is used apart from variables.
+
+---
+
+### 🔹 Learning Outcome
+
+By solving this problem, I learned how the **sliding window technique** helps optimize problems involving contiguous subarrays. This approach reduces time complexity and is widely used in many real-world and interview problems.
