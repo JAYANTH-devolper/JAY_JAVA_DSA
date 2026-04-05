@@ -1365,3 +1365,78 @@ No extra space is used apart from variables.
 ### 🔹 Learning Outcome
 
 By solving this problem, I learned how the **sliding window technique** helps optimize problems involving contiguous subarrays. This approach reduces time complexity and is widely used in many real-world and interview problems.
+## 📅 Day 27 – Longest Substring Without Repeating Characters (Sliding Window)
+
+Today I implemented the **Longest Substring Without Repeating Characters** problem using the Sliding Window technique. This is an important problem that combines **sliding window and hashing**, and is frequently asked in coding interviews.
+
+### 🔹 Problem Description
+
+Given a string, the task is to find the **length of the longest substring without repeating characters**.
+
+Example:
+
+Input:
+"abcabcbb"
+
+Output:
+3
+
+Explanation:
+The longest substring without repeating characters is "abc", which has length 3.
+
+---
+
+### 🔹 Sliding Window Logic
+
+This problem uses a **dynamic sliding window**, where the window size changes based on conditions.
+
+Steps:
+
+1. Use two pointers (`left` and `right`) to represent the window
+2. Expand the window by moving `right`
+3. If a duplicate character is found, shrink the window by moving `left`
+4. Use a HashSet or HashMap to track characters in the current window
+5. Update the maximum length whenever a valid window is found
+
+---
+
+### 🔹 Algorithm Steps
+
+1. Initialize two pointers (`left = 0`, `right = 0`)
+2. Use a HashSet to store characters
+3. Traverse the string using `right` pointer
+4. If character is not in set, add it and update max length
+5. If duplicate is found, remove characters from left until duplicate is removed
+6. Continue the process until the end of the string
+
+---
+
+### 🔹 Concepts Practiced
+
+* Sliding window technique (dynamic window)
+* Two pointer approach
+* HashSet for tracking duplicates
+* String traversal
+* Optimizing from brute force to efficient solution
+
+---
+
+### 🔹 Time Complexity
+
+O(n)
+
+Each character is visited at most twice.
+
+---
+
+### 🔹 Space Complexity
+
+O(n)
+
+Due to storage in HashSet.
+
+---
+
+### 🔹 Learning Outcome
+
+By solving this problem, I learned how to use a **dynamic sliding window** to handle problems with changing conditions. This improved my understanding of combining data structures like HashSet with pointers to efficiently solve complex string problems.
