@@ -1440,3 +1440,84 @@ Due to storage in HashSet.
 ### 🔹 Learning Outcome
 
 By solving this problem, I learned how to use a **dynamic sliding window** to handle problems with changing conditions. This improved my understanding of combining data structures like HashSet with pointers to efficiently solve complex string problems.
+
+## 📅 Day 28 – Longest Repeating Character Replacement (Sliding Window)
+
+Today I implemented the **Longest Repeating Character Replacement** problem using the Sliding Window technique. This problem is an advanced variation of sliding window and is commonly asked in coding interviews.
+
+### 🔹 Problem Description
+
+Given a string consisting of uppercase English letters and an integer `k`, the task is to find the **length of the longest substring that can be formed by replacing at most k characters such that all characters in the substring are the same**.
+
+Example:
+
+Input:
+String: "AABABBA"
+k = 1
+
+Output:
+4
+
+Explanation:
+By replacing one character, we can get "AABA" or "ABBA", both having length 4.
+
+---
+
+### 🔹 Sliding Window Logic
+
+This problem uses a **dynamic sliding window with frequency tracking**.
+
+Steps:
+
+1. Use two pointers (`left` and `right`) to maintain the window
+2. Use an array or hashmap to count the frequency of characters
+3. Keep track of the **maximum frequency of a single character** in the window
+4. If the window size minus max frequency is greater than `k`, shrink the window
+5. Otherwise, expand the window and update the result
+
+This ensures we maintain a valid window where at most `k` replacements are needed.
+
+---
+
+### 🔹 Algorithm Steps
+
+1. Initialize frequency array for characters
+2. Set `left = 0`, `maxCount = 0`, `maxLength = 0`
+3. Traverse using `right` pointer
+4. Update frequency of current character
+5. Update `maxCount`
+6. If `(window size - maxCount) > k`, move `left` pointer
+7. Update maximum length
+8. Continue until end of string
+
+---
+
+### 🔹 Concepts Practiced
+
+* Sliding window (dynamic window)
+* Frequency counting using array
+* Window shrinking condition
+* Optimization techniques
+* Two pointer approach
+
+---
+
+### 🔹 Time Complexity
+
+O(n)
+
+Each character is processed once.
+
+---
+
+### 🔹 Space Complexity
+
+O(1)
+
+Only a fixed-size array (26 characters) is used.
+
+---
+
+### 🔹 Learning Outcome
+
+By solving this problem, I learned how to combine **sliding window with frequency tracking** to solve more complex problems. This improved my ability to handle constraints dynamically and optimize solutions for interview-level questions.
