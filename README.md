@@ -1521,3 +1521,85 @@ Only a fixed-size array (26 characters) is used.
 ### 🔹 Learning Outcome
 
 By solving this problem, I learned how to combine **sliding window with frequency tracking** to solve more complex problems. This improved my ability to handle constraints dynamically and optimize solutions for interview-level questions.
+
+## 📅 Day 29 – Two Sum (Sorted Array – Two Pointer)
+
+Today I implemented the **Two Sum problem on a sorted array** using the Two Pointer technique. This problem demonstrates how using pointers can optimize solutions and avoid unnecessary computations.
+
+### 🔹 Problem Description
+
+Given a **sorted array of integers** and a target value, the task is to find two numbers such that their sum equals the target.
+
+Return the indices (or values) of the two numbers.
+
+Example:
+
+Input:
+Array: [2, 7, 11, 15]
+Target: 9
+
+Output:
+[2, 7]
+
+---
+
+### 🔹 Two Pointer Logic
+
+Instead of checking all pairs using nested loops, we use **two pointers**:
+
+* One pointer at the beginning (`left`)
+* One pointer at the end (`right`)
+
+Steps:
+
+1. Calculate the sum of elements at `left` and `right`
+2. If the sum equals the target → solution found
+3. If the sum is less than the target → move `left` forward
+4. If the sum is greater than the target → move `right` backward
+
+This approach reduces unnecessary comparisons.
+
+---
+
+### 🔹 Algorithm Steps
+
+1. Initialize `left = 0` and `right = n - 1`
+2. While `left < right`:
+
+   * Calculate sum = arr[left] + arr[right]
+   * If sum == target → return result
+   * If sum < target → increment `left`
+   * If sum > target → decrement `right`
+3. If no pair is found, return appropriate result
+
+---
+
+### 🔹 Concepts Practiced
+
+* Two pointer technique
+* Working with sorted arrays
+* Optimizing from O(n²) to O(n)
+* Efficient searching
+* Decision making using conditions
+
+---
+
+### 🔹 Time Complexity
+
+O(n)
+
+Only one traversal of the array is required.
+
+---
+
+### 🔹 Space Complexity
+
+O(1)
+
+No extra space is used.
+
+---
+
+### 🔹 Learning Outcome
+
+By solving the Two Sum problem using the two pointer technique, I learned how to efficiently search pairs in a sorted array. This approach helped me understand how pointer movement can reduce complexity and improve performance in array-based problems.
