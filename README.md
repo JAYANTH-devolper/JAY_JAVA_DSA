@@ -1603,3 +1603,85 @@ No extra space is used.
 ### 🔹 Learning Outcome
 
 By solving the Two Sum problem using the two pointer technique, I learned how to efficiently search pairs in a sorted array. This approach helped me understand how pointer movement can reduce complexity and improve performance in array-based problems.
+
+
+## 📅 Day 30 – Remove Duplicates from Sorted Array (Two Pointer)
+
+Today I implemented the **Remove Duplicates from Sorted Array** problem using the Two Pointer technique. This problem focuses on **in-place array modification** and efficient traversal.
+
+### 🔹 Problem Description
+
+Given a **sorted array**, the task is to remove duplicates **in-place** such that each element appears only once.
+
+Return the number of unique elements, and modify the array so that the first part contains only unique values.
+
+Example:
+
+Input:
+[1, 1, 2, 2, 3]
+
+Output:
+[1, 2, 3]
+Length = 3
+
+---
+
+### 🔹 Two Pointer Logic
+
+This problem uses two pointers:
+
+* `i` → tracks position of unique elements
+* `j` → scans the array
+
+Steps:
+
+1. Start with `i = 0`
+2. Traverse the array using `j`
+3. If `arr[j]` is different from `arr[i]`, move `i` forward and update value
+4. Continue until the end of the array
+
+This ensures duplicates are overwritten.
+
+---
+
+### 🔹 Algorithm Steps
+
+1. Initialize pointer `i = 0`
+2. Traverse from `j = 1` to end
+3. If `arr[j] != arr[i]`:
+
+   * Increment `i`
+   * Assign `arr[i] = arr[j]`
+4. Return `i + 1` as the number of unique elements
+
+---
+
+### 🔹 Concepts Practiced
+
+* Two pointer technique
+* In-place array modification
+* Efficient traversal
+* Avoiding extra space
+* Index manipulation
+
+---
+
+### 🔹 Time Complexity
+
+O(n)
+
+Each element is visited once.
+
+---
+
+### 🔹 Space Complexity
+
+O(1)
+
+No extra space is used.
+
+---
+
+### 🔹 Learning Outcome
+
+By solving this problem, I learned how to efficiently modify arrays in-place using the two pointer technique. This improved my understanding of pointer movement and helped me avoid unnecessary space usage while solving array problems.
